@@ -34,12 +34,12 @@ This repository demonstrates sophisticated home lab architecture with:
 ## 📚 Documentation
 
 ### Setup & Deployment
-- [Setup Guide](docs/setup/0-setup-guide.md) - Complete infrastructure deployment
-- [Proxmox Setup](docs/setup/3-proxmox.md) - Virtualization platform configuration
+- [Setup Guide](docs/setup/setup-guide.md) - Complete infrastructure deployment
+- [Proxmox Setup](docs/setup/proxmox.md) - Virtualization platform configuration
 - [Network Architecture](docs/network/network-summary.md) - VLAN design and implementation
 
 ### Network Configuration
-- [Switch Configuration](docs/network/2-switch.md) - Cisco switch setup and management
+- [Switch Configuration](docs/network/switch.md) - Cisco switch setup and management
 - [Firewall Rules](docs/network/firewall-rules.md) - pfSense rule implementation
 - [DNS & DHCP](docs/network/) - Pi-hole and Kea DHCP configuration
 
