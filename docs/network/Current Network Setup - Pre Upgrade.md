@@ -28,7 +28,7 @@
 ┌──────────────────────────────────────────────────────┐
 │                    VLANs                             │
 ├──────────────────────────────────────────────────────┤
-│ VLAN 10: Management 				   (10.10.10.0/24) │
+│ VLAN 10: Management 				   (YOUR_MGMT_SUBNET) │
 │ VLAN 20: Production 				   (YOUR_PRODUCTION_SUBNET) │
 │ VLAN 30: Media 					   (YOUR_MEDIA_SUBNET) │
 │ VLAN 40: Lab/Dev					   (YOUR_LAB_SUBNET) │
