@@ -1,6 +1,6 @@
 ## Infrastructure Management Automations
 
-> **📖 Related Documentation:** [Setup Guide](../setup/0%20-%20Setup%20Guide.md) | [Network Summary](../network/Network%20Summary.md)
+> **📖 Related Documentation:** [Setup Guide](../setup/setup-guide.md) | [Network Summary](../network/network-summary.md)
 
 
 ### 1. Service Health Monitoring & Auto-Recovery

@@ -5,7 +5,7 @@
 - [ ] Finish Firewall Configs
 
 # 2. Switches
-* *Note: see [2 - Switch](../network/2%20-%20Switch.md)
+* *Note: see [Switch](../network/switch.md)
 
 - Switches have trunk ports configured to Router, Proxmox servers, and each other
 - Trunk to each other is configured on bridge port
@@ -14,13 +14,13 @@
 <b>Needs:</b>
 - [ ] Configure WiFi port for trunking
 # 3. Proxmox
-* *Note: see [3 - Proxmox](../setup/3%20-%20Proxmox.md)*
+* *Note: see [Proxmox](../setup/proxmox.md)*
 * GPU Passthrough configured
 * 3 Proxmox servers
 	- [x] Cluster nodes?	
-![HOMELAB-01 (Primary Production Server)](0.1%20-%20Device%20Separation%20Guide.md#HOMELAB-01%20(Primary%20Production%20Server))
-![HOMELAB-02 (Development/Lab Server)](0.1%20-%20Device%20Separation%20Guide.md#HOMELAB-02%20(Development/Lab%20Server))
-![HOMELAB-03 (Utility/Backup Server)](0.1%20-%20Device%20Separation%20Guide.md#HOMELAB-03%20(Utility/Backup%20Server))
+![HOMELAB-01 (Primary Production Server)](device-separation-guide.md#HOMELAB-01%20(Primary%20Production%20Server))
+![HOMELAB-02 (Development/Lab Server)](device-separation-guide.md#HOMELAB-02%20(Development/Lab%20Server))
+![HOMELAB-03 (Utility/Backup Server)](device-separation-guide.md#HOMELAB-03%20(Utility/Backup%20Server))
 ## 3.1 DNS
 	PROD-DNS-01:
     Services: Pi-hole Primary, Unbound

@@ -1,6 +1,6 @@
 ## Security Implementation
 
-> **📖 Related Documentation:** [Network Summary](Network%20Summary.md) | [Switch Configuration](2%20-%20Switch.md) | [Setup Guide](../setup/0%20-%20Setup%20Guide.md)
+> **📖 Related Documentation:** [Network Summary](network-summary.md) | [Switch Configuration](switch.md) | [Setup Guide](../setup/setup-guide.md)
 
 
 ### pfSense Firewall Rules

@@ -1,6 +1,6 @@
 # Initial OS Install
 
-> **📖 Related Documentation:** [Setup Guide](0%20-%20Setup%20Guide.md) | [Device Separation Guide](0.1%20-%20Device%20Separation%20Guide.md) | [Network Summary](../network/Network%20Summary.md)
+> **📖 Related Documentation:** [Setup Guide](setup-guide.md) | [Device Separation Guide](device-separation-guide.md) | [Network Summary](../network/network-summary.md)
 
 
 * [GPU Passthrough](https://www.firsttiger.com/blogs/setup-proxmox-with-nvidia-pass-through-to-vms/)

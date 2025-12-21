@@ -1,6 +1,6 @@
 [Trunk port](https://learningnetwork.cisco.com/s/question/0D53i00000Kt674CAB/command-rejected-an-interface-whose-trunk-encapsulation-is-auto-can-not-be-configured-to-trunk-mode) *- site with command needed for trunking Router Switch*
 
-> **📖 Related Documentation:** [Network Summary](Network%20Summary.md) | [Firewall Rules](Firewall%20Rules.md) | [Cisco Reconfiguration](Cisco%20reconfigure.md)
+> **📖 Related Documentation:** [Network Summary](network-summary.md) | [Firewall Rules](firewall-rules.md) | [Cisco Reconfiguration](cisco-reconfigure.md)
 
 
 ### HOMELAB-SW01 (Router Switch) 

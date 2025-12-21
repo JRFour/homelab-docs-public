@@ -1,6 +1,6 @@
 # Complete Home Lab Network Design Summary
 
-> **📖 Related Documentation:** [Firewall Rules](../network/Firewall%20Rules.md) | [Switch Configuration](../network/2%20-%20Switch.md) | [Setup Guide](../setup/0%20-%20Setup%20Guide.md) | [Proxmox Setup](../setup/3%20-%20Proxmox.md)
+> **📖 Related Documentation:** [Firewall Rules](../network/firewall-rules.md) | [Switch Configuration](../network/switch.md) | [Setup Guide](../setup/setup-guide.md) | [Proxmox Setup](../setup/proxmox.md)
 
 
 ## Network Architecture Overview
