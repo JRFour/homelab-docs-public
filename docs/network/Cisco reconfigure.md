@@ -36,11 +36,11 @@ configure terminal
 hostname HOMELAB-SW01
 
 ! Configure enable password
-enable secret YourStrongPassword123!
+enable secret YOUR_ENABLE_SECRET
 
 ! Configure console password
 line console 0
-password YourConsolePassword123!
+password YOUR_CONSOLE_PASSWORD
 login
 exec-timeout 30 0
 logging synchronous
@@ -48,7 +48,7 @@ exit
 
 ! Configure VTY (Telnet/SSH) access
 line vty 0 15
-password YourVTYPassword123!
+password YOUR_VTY_PASSWORD
 login local
 transport input ssh
 exec-timeout 30 0
@@ -56,7 +56,7 @@ logging synchronous
 exit
 
 ! Create admin user
-username admin privilege 15 secret YourAdminPassword123!
+username admin privilege 15 secret YOUR_ADMIN_PASSWORD
 
 ! Configure management IP (VLAN 10)
 interface vlan 10
@@ -348,7 +348,7 @@ snmp-server contact "admin@lab.local"
 
 ! Configure SNMP v3 (more secure)
 snmp-server group HOMELAB-ADMIN v3 priv
-snmp-server user admin HOMELAB-ADMIN v3 auth sha YourAuthKey123! priv aes 128 YourPrivKey123!
+snmp-server user admin HOMELAB-ADMIN v3 auth sha YOUR_SNMP_AUTH_KEY priv aes 128 YOUR_SNMP_PRIV_KEY
 snmp-server host GW_MGMT_VLAN00 version 3 priv admin
 
 ! Enable SNMP traps
@@ -421,7 +421,7 @@ logging source-interface vlan 10
 logging host GW_MGMT_VLAN00
 
 ! Configure NTP
-ntp server GW_PROD_VLAN0
+ntp server YOUR_DNS_SERVER_IP
 ntp server pool.ntp.org
 
 ! Set timezone
@@ -518,5 +518,6 @@ copy running-config startup-config
 ```
 
 This configuration provides enterprise-grade network segmentation and security using older Cisco equipment, integrating seamlessly with your pfSense firewall and supporting all the VLANs in your home lab design.
+
 ---
 *Note: This is a sanitized example. Replace placeholder values with your actual configuration.*

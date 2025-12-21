@@ -437,5 +437,6 @@
           return [{
             json: {
               current_
+
 ---
 *Note: This is a sanitized example. Replace placeholder values with your actual configuration.*

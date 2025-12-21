@@ -332,5 +332,6 @@ Remote Access: Secure access from anywhere
 ```
 
 This design provides a production-ready, enterprise-grade home lab that serves as both a learning platform and a practical home infrastructure, with proper security, monitoring, and automation throughout.
+
 ---
 *Note: This is a sanitized example. Replace placeholder values with your actual configuration.*

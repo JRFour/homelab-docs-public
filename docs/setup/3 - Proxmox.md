@@ -109,5 +109,6 @@ https://harryvasanth.com/posts/proxmox-gpu-passthrough/
 
 mv /etc/pve/nodes/primary/qemu-server/*.conf /etc/pve/nodes/HOMELAB-01/qemu-server/
 mv /etc/pve/nodes/primary/lxc/*.conf /etc/pve/nodes/HOMELAB-01/lxc/   
+
 ---
 *Note: This is a sanitized example. Replace placeholder values with your actual configuration.*

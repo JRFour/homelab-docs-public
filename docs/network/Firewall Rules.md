@@ -319,5 +319,6 @@ block in log on $AUTOMATION_IF from $GUEST_NET to $AUTOMATION_NET label "AUTO_Bl
 # SSH to bastion
 pass in on $WAN_IF from any to $BASTION_HOST port 2222 keep state \
   (max-src-conn 3, max-src-conn-rate 5/60, overload <bru
+
 ---
 *Note: This is a sanitized example. Replace placeholder values with your actual configuration.*

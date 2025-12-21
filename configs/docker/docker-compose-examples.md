@@ -211,7 +211,7 @@ services:
     image: grafana/grafana
     container_name: grafana
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin123
+      - GF_SECURITY_ADMIN_PASSWORD=YOUR_ADMIN_PASSWORD
     volumes:
       - grafana_data:/var/lib/grafana
     ports:

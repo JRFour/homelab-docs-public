@@ -51,5 +51,6 @@ univention-keycloak saml/idp/cert get --as-pem --output "idp-cert.pem"
 This certificate can then be used to configure the SP to trust Keycloak as the IdP.
 
 In summary, the integration involves setting up a service account in Samba, configuring Keycloak to authenticate against the Samba AD via LDAP or Kerberos, and using protocol mappers to synchronize user and group information. This setup enables centralized identity management where users can authenticate through Keycloak using their Samba AD credentials.
+
 ---
 *Note: This is a sanitized example. Replace placeholder values with your actual configuration.*
