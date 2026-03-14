@@ -52,8 +52,8 @@ The pfSense 2.8.0 installation provides a solid foundation but has several areas
 - Improved uptime for network security services
 
 ### 6. ACME Certificate Management
-**Current**: Manual certificate handling
-**Recommended**: Configure automatic certificate renewal
+**Current**: Implemented with Vault PKI integration
+**Status**: Complete
 **Rationale**:
 - Automated certificate provisioning
 - Reduced administrative overhead
@@ -77,6 +77,36 @@ The pfSense 2.8.0 installation provides a solid foundation but has several areas
 - Better visibility into application-layer traffic
 - Improved network optimization
 
+## API Security Best Practices
+
+### Security Considerations
+- **API Key Management**: Regular rotation of API keys
+- **Access Controls**: Network-level restrictions using firewall rules
+- **Monitoring**: Enable detailed logging of API access and operations
+- **Least Privilege**: Assign minimal required permissions to API users
+- **Backup Prior to Changes**: Always backup configuration before API modifications
+
+### Recommended Practices
+- Implement API key rotation every 90 days
+- Restrict API access to specific IP addresses or ranges
+- Enable detailed audit logging for all API interactions
+- Use separate API users for different operational functions
+- Implement automated monitoring for API access anomalies
+
+## Certificate Lifecycle Management
+
+### Certificate Management
+- **Automated Provisioning**: ACME certificates automatically issued by Vault PKI
+- **Rotation Procedures**: Certificates renewed automatically based on expiration
+- **Storage**: Proper certificate storage and backup procedures
+- **Monitoring**: Log certificate issuance and renewal events
+
+### Best Practices
+- Implement certificate lifecycle management policies
+- Regular review of certificate usage and expiration dates
+- Automated notification for upcoming certificate expirations
+- Integration with monitoring systems for certificate health
+
 ## Implementation Timeline
 
 ### Phase 1 (Immediate)
@@ -86,14 +116,17 @@ The pfSense 2.8.0 installation provides a solid foundation but has several areas
 ### Phase 2 (Short-term)
 - Configure basic intrusion detection
 - Implement traffic shaping
+- Complete ACME implementation (already done)
 
 ### Phase 3 (Mid-term)
 - Deploy high availability (HA) configuration
-- Configure ACME certificate management
+- Implement advanced API security measures
+- Configure certificate storage and backup procedures
 
 ### Phase 4 (Long-term)
 - Advanced logging and SIEM integration
 - Enhanced traffic analysis
+- Integration of additional security monitoring tools
 
 ## Security Risk Assessment
 
@@ -101,11 +134,13 @@ The pfSense 2.8.0 installation provides a solid foundation but has several areas
 1. Outdated software (2.8.0) has known vulnerabilities
 2. Limited network visibility and threat detection
 3. Single point of failure for network security
+4. Potential risks from API access (unauthorized access, key compromise)
 
 ### Risk Mitigation
 - Upgrading to latest pfSense version addresses most known vulnerabilities
 - Adding IDS/IPS significantly improves threat detection
 - HA configuration provides business continuity
+- API security measures reduce unauthorized access risks
 
 ## Compliance Considerations
 
@@ -114,4 +149,4 @@ The current setup supports basic security requirements but can be enhanced to me
 - NIST cybersecurity guidelines
 - Industry-specific regulatory requirements
 
-This upgrade plan balances security improvements with operational feasibility, ensuring continued protection while moving toward modern security standards.
+The addition of ACME certificate automation and REST API capabilities have significantly improved the security posture while maintaining operational feasibility. The implementation balances security improvements with operational needs, ensuring continued protection while supporting modern security standards.

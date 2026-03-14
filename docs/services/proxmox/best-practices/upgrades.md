@@ -9,6 +9,7 @@ The Proxmox environment has been configured with a multi-server approach to prov
 - GPU passthrough capabilities for media processing
 - ZFS storage integration with TrueNAS
 - Proper VLAN-aware bridge configuration
+- ACME certificate automation with Vault PKI
 
 ## Security Hardening
 
@@ -46,6 +47,12 @@ The Proxmox environment has been configured with a multi-server approach to prov
    - Log retention policies
    - Security incident tracking
 
+7. **Certificate Management Security**
+   - Secure storage of ACME account keys
+   - Monitoring of certificate issuance events
+   - Rotation of certificate management procedures
+   - Integration of certificate security with overall infrastructure
+
 ## Performance Optimization
 
 ### Host Level
@@ -78,23 +85,27 @@ The Proxmox environment has been configured with a multi-server approach to prov
    - Implement proper access controls
    - Configure audit logging
    - Set up backup verification procedures
+   - Verify ACME certificate management is working properly
 
 ### Short-term (3-6 months)
 3. **Monitoring Enhancement**
    - Implement more comprehensive monitoring
    - Set up alerting system
    - Dashboard creation
+   - Monitor certificate renewal processes
 
 4. **Automation**
    - VM/Container provisioning automation
    - Backup automation
    - Configuration management
+   - Certificate renewal automation
 
 ### Medium-term (6-12 months)
 5. **Infrastructure Improvements**
    - Consider hardware upgrades
    - Expand storage capacity
    - Review and optimize resource allocation
+   - Review and optimize certificate management procedures
 
 6. **Cloud Integration**
    - Cloud backup solutions
@@ -113,7 +124,7 @@ The Proxmox environment has been configured with a multi-server approach to prov
 - **Hardware Failure**: Failure recovery procedures
 - **Security Breach**: Incident response protocol
 - **Data Loss**: Restore validation procedures
-- **Performance Degradation**: Troubleshooting steps
+- **Certificate Issues**: Certificate renewal and troubleshooting
 
 ## Capacity Planning
 
@@ -141,16 +152,19 @@ The Proxmox environment has been configured with a multi-server approach to prov
    - Standard operating procedures
    - Configuration management
    - Change management process
+   - Certificate management procedures
 
 2. **Emergency Procedures**
    - Disaster recovery steps
    - Incident response guide
    - Backup restoration
+   - Certificate issue resolution
 
 3. **Maintenance Schedules**
    - Regular maintenance tasks
    - Upgrade schedules
    - Testing procedures
+   - Certificate management testing
 
 ## Future Enhancements
 
@@ -159,6 +173,7 @@ The Proxmox environment has been configured with a multi-server approach to prov
 - Deployment automation
 - Configuration management
 - Continuous integration/deployment
+- Automated certificate management
 
 ### Advanced Features
 - Proxmox high availability
@@ -171,6 +186,7 @@ The Proxmox environment has been configured with a multi-server approach to prov
 - Better logging aggregation
 - Improved backup solutions
 - Cloud service integration
+- More advanced certificate management
 
 ## Risk Assessment
 
@@ -179,12 +195,14 @@ The Proxmox environment has been configured with a multi-server approach to prov
 2. **Availability**: Single points of failure
 3. **Performance**: Resource contention
 4. **Data Loss**: Backup integrity issues
+5. **Certificate Management**: Vulnerabilities in automated certificate processes
 
 ### Mitigation Plans
 - Regular updates
 - Redundancy implementation
 - Performance monitoring
 - Regular testing
+- Certificate monitoring and validation
 
 ## Implementation Timeline
 
@@ -193,18 +211,21 @@ The Proxmox environment has been configured with a multi-server approach to prov
 - Implement basic monitoring
 - Verify backup procedures
 - Review access controls
+- Verify ACME certificate management is working properly
 
 ### Phase 2 (3 months)
 - Enhance security measures
 - Implement automation
 - Update documentation
 - Performance tuning
+- Improve certificate management monitoring
 
 ### Phase 3 (6 months)
 - Advanced features
 - Integration enhancements
 - Optimization
 - Testing and validation
+- Certificate management optimization
 
 ## Budget Considerations
 
@@ -213,13 +234,15 @@ The Proxmox environment has been configured with a multi-server approach to prov
 - Hardware improvements
 - Monitoring tools
 - Backup solutions
+- Certificate management tools
 
 ### Ongoing Costs
 - Maintenance and support
 - Storage expansion
 - Monitoring subscription fees
 - Training costs
+- Certificate management services
 
 ## Conclusion
 
-The Proxmox infrastructure provides a solid foundation for the home lab with proper segmentation, redundancy, and performance capabilities. The implementation of GPU passthrough and ZFS integration with TrueNAS provides advanced capabilities beyond basic virtualization. With proper maintenance, security hardening, and ongoing improvements, this setup will continue to serve the evolving needs of the home lab network.
+The Proxmox infrastructure provides a solid foundation for the home lab with proper segmentation, redundancy, and performance capabilities. The implementation of GPU passthrough and ZFS integration with TrueNAS provides advanced capabilities beyond basic virtualization. The addition of ACME certificate automation with Vault PKI further enhances the security posture. With proper maintenance, security hardening, and ongoing improvements, this setup will continue to serve the evolving needs of the home lab network.

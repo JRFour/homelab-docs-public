@@ -7,6 +7,8 @@ This documentation covers the pfSense router and firewall configuration for the 
 - **Version**: pfSense Community Edition 2.8.0
 - **Services**: VLAN routing, DHCP, DNS resolver, static IP assignments
 - **VPN**: Not on pfSense (separate servers)
+- **API Access**: REST API package installed for programmatic management
+- **Certificate Management**: ACME integration with Vault PKI
 
 ## Architecture
 The pfSense firewall serves as the central networking hub, implementing:
@@ -14,6 +16,8 @@ The pfSense firewall serves as the central networking hub, implementing:
 - Strict inter-VLAN communication controls
 - Comprehensive firewall rule enforcement
 - Network address translation (NAT)
+- REST API access for automated management
+- ACME certificate automation
 
 ## VLAN Configuration
 The infrastructure utilizes a 9-VLAN network segmentation scheme:

@@ -8,6 +8,7 @@ The homelab utilizes a multi-server Proxmox environment with three primary serve
 - **HOMELAB-01**: Primary production server
 - **HOMELAB-02**: Development and testing server  
 - **HOMELAB-03**: Utility and backup server
+- **Certificate Management**: ACME integration with Vault PKI for automated certificate issuance
 
 ## Infrastructure Purpose
 
@@ -17,6 +18,7 @@ The Proxmox environment serves as the core virtualization platform for:
 - Resource sharing across services
 - High availability and redundancy
 - Development and testing environments
+- Automated certificate management
 
 ## Architecture
 
@@ -26,6 +28,7 @@ The architecture implements:
 - GPU passthrough capabilities
 - ZFS storage integration
 - Centralized management
+- Automated certificate management with Vault PKI
 
 ## Documentation Sections
 
@@ -38,6 +41,7 @@ The architecture implements:
 - VM/container templates and creation
 - GPU passthrough setup
 - Backup procedures
+- ACME certificate management with Vault PKI
 
 ### Management
 - Cluster setup and maintenance

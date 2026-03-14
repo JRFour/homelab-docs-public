@@ -1,12 +1,11 @@
 # Services Configuration
 
 ## Overview
-The pfSense firewall provides critical network services including VLAN routing, DHCP, DNS resolution, and static IP assignments.
+The pfSense firewall provides critical network services including VLAN routing, DHCP, DNS resolution, static IP assignments, and REST API access for automated management.
 
 ## VLAN Routing
 
 The pfSense device implements full VLAN routing between all 9 network segments. Each VLAN is configured with:
-
 - Unique IP subnet allocation
 - Default gateway configuration
 - Route table entries for inter-VLAN communication
@@ -38,7 +37,6 @@ DHCP services are configured for the following VLANs:
 
 ### Primary Function
 The pfSense device acts as a DNS resolver for all internal VLANs, providing:
-
 - Internal DNS resolution for services
 - Caching of external DNS queries
 - Security filtering
@@ -54,7 +52,6 @@ The pfSense device acts as a DNS resolver for all internal VLANs, providing:
 ## Static IP Assignments
 
 Static IP addresses are configured for critical infrastructure:
-
 - **pfSense appliance**: 10.x.x.x (VLAN 10)
 - **Management servers**: 10.10.0.x
 - **Production servers**: 10.20.0.x
@@ -68,6 +65,22 @@ NAT is configured for:
 - Internal access to external services
 - Network isolation between VLANs
 
+## REST API Access
+
+A REST API package has been installed to enable programmatic management:
+- Provides automated management of static DHCP mappings
+- Supports GET, POST, PUT, and DELETE operations for DHCP static mappings
+- Uses API Key authentication
+- Enables centralized network management and automation
+
+## ACME Certificate Management
+
+Automated certificate management is configured with Vault PKI:
+- ACME package installed with Vault as custom ACME server
+- Certificate issuance automated for internal services
+- Integration with Vault intermediate CA
+- Supports certificate renewal through ACME protocol
+
 ## Service Status
 
 All pfSense services are operational:
@@ -76,3 +89,5 @@ All pfSense services are operational:
 - DNS: Active
 - NAT: Active
 - Firewall: Active
+- REST API: Active
+- ACME Certificate Management: Active

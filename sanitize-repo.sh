@@ -58,7 +58,7 @@ find . -type f -name "*.sh" -not -path "./.git/*" | while read -r file; do
         sed -i 's/secret[[:space:]]*=[[:space:]]*[^\r\n]*/secret=[REDACTED]
         sed -i 's/key[[:space:]]*=[[:space:]]*[^\r\n]*/key=[REDACTED]
         sed -i 's/token[[:space:]]*=[[:space:]]*[^\r\n]*/token=[REDACTED]
-        sed -i 's/api key=[REDACTED]
+        sed -i 's/api key[[:space:]]*=[[:space:]]*[^\r\n]*/api key=[REDACTED]
     fi
 done
 
