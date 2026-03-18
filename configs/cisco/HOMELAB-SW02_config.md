@@ -11,9 +11,9 @@ hostname HOMELAB-SW02
 boot-start-marker
 boot-end-marker
 !
-enable secret 5 $1$JA2d$roJrfUAkiq5vb/0xRfxIJ/
+enable secret 5 <md5-hash>
 !
-username admin privilege 15 secret 5 $1$N2a0$L5QLnMRVn.Nds6qo9KlnB.
+username admin privilege 15 secret 5 <md5-hash>
 aaa new-model
 !
 !
@@ -177,10 +177,10 @@ interface Vlan1
  shutdown
 !
 interface Vlan10
- ip address 10.10.10.3 255.255.255.0
+ ip address 10.x.x.x X.X.X.X
  no ip route-cache
 !
-ip default-gateway 10.10.10.1
+ip default-gateway 10.x.x.x
 ip http server
 ip http secure-server
 !
@@ -189,16 +189,16 @@ control-plane
 !
 line con 0
  exec-timeout 30 0
- password D0nt@skM3
+ password <password>
  logging synchronous
 line vty 0 4
  exec-timeout 30 0
- password D0nt@skM3
+ password <password>
  logging synchronous
  transport input ssh
 line vty 5 15
  exec-timeout 30 0
- password D0nt@skM3
+ password <password>
  logging synchronous
  transport input ssh
 !

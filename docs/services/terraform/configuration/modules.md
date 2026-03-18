@@ -91,8 +91,8 @@ hostname    = "dev-container"
 memory      = 1024
 cores       = 2
 disk        = 20
-ip_address  = "10.10.10.100"
-gateway     = "10.10.10.1"
+ip_address  = "10.x.x.x"
+gateway     = "10.x.x.x"
 template    = "debian-11-default"
 ```
 

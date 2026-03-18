@@ -9,13 +9,13 @@ The network infrastructure uses a two-switch design with trunk connections to th
 ```
                     ┌─────────────────────┐
                     │    pfSense FW       │
-                    │   (10.10.0.1)      │
+                    │   (10.x.x.x)      │
                     └──────────┬──────────┘
                                │
                     ┌──────────┴──────────┐
                     │   HOMELAB-SW01       │
                     │  Cisco 2960-24TC-L │
-                    │   (10.10.10.2)      │
+                    │   (10.x.x.x)      │
                     └──────────┬──────────┘
                                │
                     ┌──────────┴──────────┐
@@ -26,7 +26,7 @@ The network infrastructure uses a two-switch design with trunk connections to th
                     ┌──────────┴──────────┐
                     │   HOMELAB-SW02      │
                     │   Cisco 3560-8PC-S  │
-                    │   (10.10.10.3)      │
+                    │   (10.x.x.x)      │
                     └──────────┬──────────┘
                                │
          ┌─────────────────────┼─────────────────────┐
@@ -41,18 +41,18 @@ The network infrastructure uses a two-switch design with trunk connections to th
 ## Network Segments
 
 ### Management Segment (VLAN 10)
-- **Network**: 10.10.0.0/24
-- **Gateway**: 10.10.0.1 (pfSense)
-- **Switch Management**: 10.10.10.2 (SW01), 10.10.10.3 (SW02)
+- **Network**: 10.x.x.x/24
+- **Gateway**: 10.x.x.x (pfSense)
+- **Switch Management**: 10.x.x.x (SW01), 10.x.x.x (SW02)
 - **Purpose**: Infrastructure management
 
 ### Production Segment (VLAN 20)
-- **Network**: 10.20.0.0/24
+- **Network**: 10.x.x.x/24
 - **Devices**: TrueNAS, general servers
 - **Access**: Multiple ports on both switches
 
 ### Media Segment (VLAN 30)
-- **Network**: 10.30.0.0/24
+- **Network**: 10.x.x.x/24
 - **Devices**: SearxNG, Repository, Black PI, 3CX
 - **Access**: Multiple ports on SW02
 

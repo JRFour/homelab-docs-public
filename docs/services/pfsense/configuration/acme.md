@@ -20,7 +20,7 @@ Configure Vault as a custom ACME server:
 3. Fill in the fields:
    - **Internal ID**: e.g., `vault-acme` (lowercase letters, numbers, dash)
    - **Display Name**: e.g., `Vault ACME Server`
-   - **Server URL**: `http://10.10.20.5:8200/v1/pki_int/acme/directory`
+   - **Server URL**: `http://10.x.x.x:8200/v1/pki_int/acme/directory`
 
 ## Account Key Setup
 
@@ -49,7 +49,7 @@ Configure certificates using Webroot Local Folder method:
 ## Integration with Vault PKI
 
 The ACME integration with Vault PKI uses the intermediate CA:
-- Vault ACME directory endpoint: `http://10.10.20.5:8200/v1/pki_int/acme/directory`
+- Vault ACME directory endpoint: `http://10.x.x.x:8200/v1/pki_int/acme/directory`
 - This allows pfSense to request certificates from Vault using a custom ACME server
 
 ## Certificate Renewal
@@ -62,7 +62,7 @@ Certificates are automatically renewed by the ACME package based on their expira
 
 ## Security Considerations
 
-1. Network access: Ensure pfSense can access Vault at `http://10.10.20.5:8200`
+1. Network access: Ensure pfSense can access Vault at `http://10.x.x.x:8200`
 2. Trust chain: Verify that pfSense nodes trust the Vault CA certificate
 3. Policies: Use appropriate Vault policies to control who can issue certificates
 4. EAB Support: Consider enabling External Account Binding (EAB) for additional security if required

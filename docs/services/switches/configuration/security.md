@@ -214,7 +214,7 @@ logging source-interface Vlan10
 #### Management ACL Example
 ```
 ip access-list extended MANAGEMENT
- permit tcp 10.10.10.0 0.0.0.255 any eq ssh
+ permit tcp 10.x.x.x X.X.X.X any eq ssh
  deny ip any any log
 ```
 

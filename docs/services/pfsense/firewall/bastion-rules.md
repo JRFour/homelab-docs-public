@@ -3,7 +3,7 @@
 ## Overview
 The Bastion VLAN provides the highest security level for administrative access, serving as a controlled gateway to all other networks.
 
-## Bastion VLAN (10.0.80.0/24) Rules
+## Bastion VLAN (10.x.x.x/24) Rules
 
 ### Outbound Rules
 ```

@@ -11,15 +11,15 @@ Both switches implement a comprehensive 9-VLAN network segmentation strategy usi
 | VLAN ID | Name | Subnet | Purpose | Switch Ports |
 |---------|------|--------|---------|--------------|
 | 1 | Default | N/A | Unused (admin down) | N/A |
-| 10 | Management | 10.10.0.0/24 | Infrastructure management | Trunk only |
-| 20 | Production | 10.20.0.0/24 | Core production services | Access + Trunk |
-| 30 | Media | 10.30.0.0/24 | Media streaming | Access + Trunk |
-| 40 | Lab | 10.40.0.0/24 | Development/testing | Access + Trunk |
-| 50 | IoT | 10.50.0.0/24 | Smart home devices | Access + Trunk |
-| 60 | Guest | 10.60.0.0/24 | Guest network | Access + Trunk |
-| 70 | DMZ | 10.70.0.0/24 | Public-facing services | Access + Trunk |
-| 80 | Bastion | 10.80.0.0/24 | Security/access | Access + Trunk |
-| 90 | Automation | 10.90.0.0/24 | Workflow automation | Access + Trunk |
+| 10 | Management | 10.x.x.x/24 | Infrastructure management | Trunk only |
+| 20 | Production | 10.x.x.x/24 | Core production services | Access + Trunk |
+| 30 | Media | 10.x.x.x/24 | Media streaming | Access + Trunk |
+| 40 | Lab | 10.x.x.x/24 | Development/testing | Access + Trunk |
+| 50 | IoT | 10.x.x.x/24 | Smart home devices | Access + Trunk |
+| 60 | Guest | 10.x.x.x/24 | Guest network | Access + Trunk |
+| 70 | DMZ | 10.x.x.x/24 | Public-facing services | Access + Trunk |
+| 80 | Bastion | 10.x.x.x/24 | Security/access | Access + Trunk |
+| 90 | Automation | 10.x.x.x/24 | Workflow automation | Access + Trunk |
 
 ## Trunk Port Configuration
 
@@ -114,12 +114,12 @@ interface FastEthernet0/2
 
 ### Inter-VLAN Communication
 - **Router**: pfSense handles inter-VLAN routing
-- **Management Gateway**: 10.10.0.1
-- **Switch Management**: 10.10.0.2 (SW01), 10.10.0.3 (SW02)
+- **Management Gateway**: 10.x.x.x
+- **Switch Management**: 10.x.x.x (SW01), 10.x.x.x (SW02)
 
 ### Default Gateway Configuration
 ```
-ip default-gateway 10.10.0.1
+ip default-gateway 10.x.x.x
 ```
 
 ## VLAN Security

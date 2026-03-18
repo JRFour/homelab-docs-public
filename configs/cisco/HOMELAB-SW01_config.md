@@ -8,9 +8,9 @@ service password-encryption
 !
 hostname HOMELAB-SW01
 !
-enable secret 5 $1$OUr8$/wUS.Zx5DOkKIV4a/szvP/
+enable secret 5 <md5-hash>
 !
-username admin privilege 15 secret 5 $1$Q3r2$4mjNFABeL9Jsej1xOhanS/
+username admin privilege 15 secret 5 <md5-hash>
 no aaa new-model
 system mtu routing 1500
 ip subnet-zero
@@ -125,13 +125,13 @@ interface GigabitEthernet0/1
  spanning-tree portfast trunk
 !
 interface Vlan1
- ip address 10.10.10.2 255.255.255.0
+ ip address 10.x.x.x X.X.X.X
  shutdown
 !
 interface Vlan10
- ip address 10.10.10.2 255.255.255.0
+ ip address 10.x.x.x X.X.X.X
 !
-ip default-gateway 10.10.10.1
+ip default-gateway 10.x.x.x
 ip classless
 ip route profile
 ip http server
@@ -143,18 +143,18 @@ control-plane
 !
 line con 0
  exec-timeout 30 0
- password 7 106A5917113701002157
+ password <password> <type7-hash>
  logging synchronous
  login
 line vty 0 4
  exec-timeout 30 0
- password 7 1321471C1F2C17210677
+ password <password> <type7-hash>
  logging synchronous
  login local
  transport input ssh
 line vty 5 15
  exec-timeout 30 0
- password 7 1321471C1F2C17210677
+ password <password> <type7-hash>
  logging synchronous
  login local
  transport input ssh

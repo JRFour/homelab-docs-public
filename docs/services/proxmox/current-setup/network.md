@@ -45,7 +45,7 @@ iface vmbr0 inet manual
 ## IP Addressing
 
 ### Management Network
-- Management VLAN (10.10.10.0/24)
+- Management VLAN (10.x.x.x/24)
 - Management interface addresses
 - Gateway configuration
 

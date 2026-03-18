@@ -47,7 +47,7 @@ curl -X POST https://pfsense.hogwarts.home/api/v2/dhcpd/static_mapping \
   -d '{
     "parent_id": "opt1",
     "mac": "00:11:22:33:44:55",
-    "ipaddr": "10.10.20.100",
+    "ipaddr": "10.x.x.x",
     "cid": "string",
     "hostname": "printer-01",
     "domain": "hogwarts.home",

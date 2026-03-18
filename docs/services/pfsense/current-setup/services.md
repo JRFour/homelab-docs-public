@@ -16,15 +16,15 @@ The pfSense device implements full VLAN routing between all 9 network segments. 
 ### Scope Configuration
 DHCP services are configured for the following VLANs:
 
-- **VLAN 10**: Network Management (10.10.0.0/24)  
-- **VLAN 20**: Production Services (10.20.0.0/24)
-- **VLAN 30**: Secure Zone (10.30.0.0/24)
-- **VLAN 40**: Guest Networks (10.40.0.0/24)
-- **VLAN 50**: Security Monitoring (10.50.0.0/24)
-- **VLAN 60**: Development (10.60.0.0/24)
-- **VLAN 70**: Storage Services (10.70.0.0/24)
-- **VLAN 80**: Voice Services (10.80.0.0/24)
-- **VLAN 90**: IoT Devices (10.90.0.0/24)
+- **VLAN 10**: Network Management (10.x.x.x/24)  
+- **VLAN 20**: Production Services (10.x.x.x/24)
+- **VLAN 30**: Secure Zone (10.x.x.x/24)
+- **VLAN 40**: Guest Networks (10.x.x.x/24)
+- **VLAN 50**: Security Monitoring (10.x.x.x/24)
+- **VLAN 60**: Development (10.x.x.x/24)
+- **VLAN 70**: Storage Services (10.x.x.x/24)
+- **VLAN 80**: Voice Services (10.x.x.x/24)
+- **VLAN 90**: IoT Devices (10.x.x.x/24)
 
 ### DHCP Settings
 - Lease time: 24 hours
@@ -52,7 +52,7 @@ The pfSense device acts as a DNS resolver for all internal VLANs, providing:
 ## Static IP Assignments
 
 Static IP addresses are configured for critical infrastructure:
-- **pfSense appliance**: 10.10.0.1 (VLAN 10)
+- **pfSense appliance**: 10.x.x.x (VLAN 10)
 - **Management servers**: 10.10.0.x
 - **Production servers**: 10.20.0.x
 - **Monitoring services**: 10.50.0.x
