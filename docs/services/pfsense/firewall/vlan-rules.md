@@ -1,6 +1,6 @@
 # Per-VLAN Rules
 
-## Management VLAN (10.x.x.x/24)
+## Management VLAN (10.10.0.0/24)
 
 ### Inbound Rules
 | Rule | Description | Status |
@@ -28,7 +28,7 @@ pass out on $MGMT_IF from $MGMT_NET to $BASTION_NET keep state
 pass out on $MGMT_IF from $MGMT_NET to $AUTOMATION_NET keep state
 ```
 
-## Production VLAN (10.x.x.x/24)
+## Production VLAN (10.20.0.0/24)
 
 ### Inbound Rules
 | Rule | Description | Status |
@@ -65,7 +65,7 @@ pass out on $PROD_IF from $PROD_NET to $MONITORING_NET port 8080 keep state
 pass out on $PROD_IF from $PROD_NET to $MONITORING_NET port 9090 keep state
 ```
 
-## Media VLAN (10.x.x.x/24)
+## Media VLAN (10.30.0.0/24)
 
 ### Inbound Rules
 | Rule | Description | Status |
@@ -97,7 +97,7 @@ pass out on $MEDIA_IF from $MEDIA_NET to $MONITORING_NET port 9090 keep state
 pass out on $MEDIA_IF from $MEDIA_NET to $AUTOMATION_NET port 8080 keep state
 ```
 
-## Lab/Development VLAN (10.x.x.x/24)
+## Lab/Development VLAN (10.40.0.0/24)
 
 ### Inbound Rules
 | Rule | Description | Status |
@@ -129,7 +129,7 @@ pass out on $LAB_IF from $LAB_NET to $MONITORING_NET port 9090 keep state
 pass out on $LAB_IF from $LAB_NET to $AUTOMATION_NET port 8080 keep state
 ```
 
-## IoT/Home Automation VLAN (10.x.x.x/24)
+## IoT/Home Automation VLAN (10.50.0.0/24)
 
 ### Inbound Rules
 | Rule | Description | Status |
@@ -167,7 +167,7 @@ pass out on $IOT_IF from $IOT_NET to $AUTOMATION_NET port 8080 keep state
 pass out on $IOT_IF from $IOT_NET to $IOT_NET port 1883 keep state
 ```
 
-## Guest VLAN (10.x.x.x/24)
+## Guest VLAN (10.60.0.0/24)
 
 ### Inbound Rules
 | Rule | Description | Status |

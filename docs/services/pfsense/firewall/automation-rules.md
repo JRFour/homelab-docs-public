@@ -3,7 +3,7 @@
 ## Overview
 The Automation VLAN provides secure access for automation services while maintaining strict controls on communication with other networks.
 
-## Automation VLAN (10.x.x.x/24) Rules
+## Automation VLAN (10.0.90.0/24) Rules
 
 ### Outbound Rules
 ```

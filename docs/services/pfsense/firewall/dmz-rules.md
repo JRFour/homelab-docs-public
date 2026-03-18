@@ -3,7 +3,7 @@
 ## Overview
 The DMZ VLAN acts as a secure internet-facing zone with strict egress controls and limited access to internal services.
 
-## DMZ VLAN (10.x.x.x/24) Rules
+## DMZ VLAN (10.0.70.0/24) Rules
 
 ### Outbound Rules
 ```
