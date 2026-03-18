@@ -20,7 +20,7 @@ Register an ACME account via CLI:
 pvenode acme account register default <your-email>
 ```
 - Choose **option 2 (Custom)** when prompted for the directory endpoint
-- Enter your Vault ACME directory URL: `https://10.x.x.x:8200/v1/pki_int/acme/directory`
+- Enter your Vault ACME directory URL: `https://10.10.20.5:8200/v1/pki_int/acme/directory`
 - Do **not** use external account binding (EAB) unless required
 
 ### 2. Set Domains
@@ -44,14 +44,14 @@ pvenode acme cert order
 ## Security Considerations
 
 1. **Trust Chain**: Ensure Proxmox nodes trust the Vault CA certificate
-2. **Network Access**: Verify Proxmox nodes can access Vault at `https://10.x.x.x:8200`
+2. **Network Access**: Verify Proxmox nodes can access Vault at `https://10.10.20.5:8200`
 3. **Certificate Storage**: Automated certificates stored in Proxmox certificate store
 4. **Rotation**: Certificates automatically renewed by ACME process
 
 ## Integration Details
 
 The ACME integration uses Vault's intermediate PKI:
-- ACME directory endpoint: `https://10.x.x.x:8200/v1/pki_int/acme/directory`
+- ACME directory endpoint: `https://10.10.20.5:8200/v1/pki_int/acme/directory`
 - This allows Proxmox to request certificates from Vault using Vault's ACME support
 - Certificates are automatically renewed based on expiration dates
 
