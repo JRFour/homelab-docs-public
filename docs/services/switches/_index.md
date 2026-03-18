@@ -7,14 +7,14 @@ This documentation covers the network switching infrastructure for the home lab,
 - **Switch Count**: 2 Cisco managed switches
 - **Models**: Cisco WS-C2960-24TC-L and Cisco WS-C3560-8PC-S
 - **Firmware**: Cisco IOS 12.2
-- **Management IP**: 10.x.x.x (HOMELAB-SW01), 10.x.x.x (HOMELAB-SW02)
+- **Management IP**: 10.10.10.2 (HOMELAB-SW01), 10.10.10.3 (HOMELAB-SW02)
 
 ## Switch Roles
 
 ### HOMELAB-SW01 (Router Switch)
 - **Model**: Cisco WS-C2960-24TC-L
 - **Purpose**: Primary switch for router/firewall connections
-- **Management IP**: 10.x.x.x
+- **Management IP**: 10.10.10.2
 - **Key Functions**: 
   - Uplink to pfSense firewall
   - Trunk ports to WiFi access points
@@ -24,7 +24,7 @@ This documentation covers the network switching infrastructure for the home lab,
 ### HOMELAB-SW02 (Server Switch)
 - **Model**: Cisco WS-C3560-8PC-S
 - **Purpose**: Server and storage connectivity
-- **Management IP**: 10.x.x.x
+- **Management IP**: 10.10.10.3
 - **Key Functions**:
   - Proxmox server connections
   - TrueNAS storage connectivity

@@ -16,7 +16,7 @@
 | **MAC Address Table** | 8,000 entries |
 | **VLAN Support** | 255 VLANs |
 | **Firmware Version** | Cisco IOS 12.2 |
-| **Management IP** | 10.x.x.x |
+| **Management IP** | 10.10.10.2 |
 | **Hostname** | HOMELAB-SW01 |
 | **Domain** | hogwarts.home |
 
@@ -35,7 +35,7 @@
 | **MAC Address Table** | 12,000 entries |
 | **VLAN Support** | 1,005 VLANs |
 | **Firmware Version** | Cisco IOS 12.2 |
-| **Management IP** | 10.x.x.x |
+| **Management IP** | 10.10.10.3 |
 | **Hostname** | HOMELAB-SW02 |
 | **Domain** | hogwarts.home |
 

@@ -9,20 +9,20 @@ Both switches are configured with static IP addresses on VLAN 10 (Management):
 #### HOMELAB-SW01
 ```
 interface Vlan10
- ip address 10.x.x.x X.X.X.X
+ ip address 10.10.10.2 255.255.255.0
  no shutdown
 ```
 
 #### HOMELAB-SW02
 ```
 interface Vlan10
- ip address 10.x.x.x X.X.X.X
+ ip address 10.10.10.3 255.255.255.0
  no shutdown
 ```
 
 ### Default Gateway
 ```
-ip default-gateway 10.x.x.x
+ip default-gateway 10.10.10.1
 ```
 
 ## Access Methods
