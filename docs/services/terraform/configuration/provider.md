@@ -60,8 +60,8 @@ resource "proxmox_lxc" "example" {
   
   network {
     name = "net0"
-    ip   = "10.x.x.x/24"
-    gw   = "10.x.x.x"
+    ip   = "10.10.10.100/24"
+    gw   = "10.10.10.1"
   }
 }
 ```
